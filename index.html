@@ -51,7 +51,7 @@
 				//model
 
 				var loader = new THREE.OBJLoader();
-				loader.load( 'models/pajarraco.obj', function ( obj ) {
+				loader.load( 'models/plexus.obj', function ( obj ) {
 
 					object = obj;
 					object.scale.multiplyScalar( 300 );
@@ -80,17 +80,6 @@
 				light4.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
 				scene.add( light4 );
 
-				light5 = new THREE.PointLight( 0xffaa00, 2, 50 );
-				light5.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
-				scene.add( light5 );
-
-				light6 = new THREE.PointLight( 0xffaa00, 2, 50 );
-				light6.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
-				scene.add( light6 );
-				
-				light7 = new THREE.PointLight( 0xffaa00, 2, 50 );
-				light7.add( new THREE.Mesh( sphere, new THREE.MeshBasicMaterial( { color: 0xffaa00 } ) ) );
-				scene.add( light7 );
 				//renderer
 
 				renderer = new THREE.WebGLRenderer( { antialias: true } );
